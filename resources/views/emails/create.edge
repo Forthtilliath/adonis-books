@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Thanks for adding a new book to our API! 🎊</h1>
+    <p>Title: {{ book.title }}</p>
+    <p>Author: {{ book.author }}</p>
+    <p>Resume: {{ book.resume }}</p>
+    <p>Categories:</p>
+    <ul>
+      @each(category in book.categories)
+      <li>{{ category.name }}</li>
+      @end
+    </ul>
+  </body>
+</html>
